@@ -1,0 +1,44 @@
+.clock {
+    max-width: 700px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.setters {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+    border: 7px solid snow;
+    background-color: black;
+}
+
+button {
+    margin: 15px;
+    padding:  17px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #004225;
+    color: snow;
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+span {
+    font-size: 27px;
+}
+
+.display {
+    text-align: center;
+    margin-top: 20px;
+    border: 7px solid snow;
+    background-color: black;
+}
