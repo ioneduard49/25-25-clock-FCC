@@ -34,9 +34,11 @@ function App() {
 
   useEffect(() => {
     if (displayState.time === 0) {
-      const audio = document.getElementById("beep") as HTMLAudioElement;
-      audio.currentTime = 0;
-      audio.play().catch((err) => console.log(err));
+        const audio = document.getElementById("beep") as HTMLAudioElement;
+        audio.currentTime = 0;
+        audio.play().catch((err) => console.log(err));
+    }
+    if (displayState.time < 0) {
       setDisplayState((prev) => ({
         ...prev,
         timeType: prev.timeType === "Session" ? "Break" : "Session",
